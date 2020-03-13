@@ -65,7 +65,7 @@ function init() {
 }
 
 // Smooth Scrolling
-$('.navbar a, .btn').on('click', function (event) {
+$('.navbar a, .navbar .btn').on('click', function (event) {
   if (this.hash !== '') {
     event.preventDefault();
 
