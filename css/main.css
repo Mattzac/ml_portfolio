@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Play', sans-serif; }
+
+li {
+  list-style: none; }
+
+body {
+  background-color: #333 !important; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+.navbar {
+  display: flex;
+  background: #333;
+  color: white;
+  position: sticky;
+  top: 0;
+  left: 0;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto; }
+  .navbar .logo {
+    padding-left: 10px; }
+    .navbar .logo a {
+      text-decoration: none;
+      color: white !important; }
+    .navbar .logo .logo-span {
+      color: #74b72e; }
+  .navbar ul {
+    text-align: center;
+    display: flex; }
+    .navbar ul a {
+      text-decoration: none;
+      font-size: 1.2rem;
+      color: inherit;
+      padding-bottom: 3px;
+      border-bottom: 2px transparent solid;
+      border-color: #333;
+      transition: border-color 0.5s; }
+      .navbar ul a:hover {
+        border-color: white; }
+      .navbar ul a.current {
+        color: #74b72e;
+        border-color: white; }
+
+header {
+  background-color: #333; }
+
+.banner {
+  background-color: #333; }
+  .banner img {
+    width: 100%; }
+
+li {
+  padding: 0 10px; }
+
+.showcase {
+  height: 60vh !important;
+  background: black; }
+  .showcase .text-color {
+    color: white;
+    font-size: 3.5rem; }
+  .showcase .showcase-content {
+    padding: 100px 70px;
+    justify-content: center;
+    text-align: center; }
+    .showcase .showcase-content p {
+      font-size: 20px;
+      color: white; }
+  .showcase .btn {
+    margin-top: 100px; }
+
+#work {
+  background: #333;
+  text-align: center;
+  width: 100%;
+  color: white;
+  padding: 1rem; }
+  #work .what {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 1.25rem; }
+    #work .what h1 {
+      color: #66806D;
+      font-size: 50px; }
+  #work .skills {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 50px;
+    font-size: 1.25rem; }
+    #work .skills .icon-color {
+      color: #66806D; }
+  #work p {
+    padding-top: 1rem; }
+
+#about {
+  background: #333;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  #about .img-container img {
+    height: 100%;
+    width: 100%;
+    padding-left: 100px; }
+  #about .text-container {
+    color: #f3f3f3;
+    width: 500px; }
+    #about .text-container h2 {
+      color: #66806D;
+      font-size: 50px; }
+    #about .text-container .lead {
+      text-align: center;
+      justify-content: center; }
+
+#contact .col-lg {
+  text-align: center;
+  color: whitesmoke; }
+
+footer {
+  background: #333;
+  height: 50px;
+  text-align: center;
+  justify-items: center;
+  color: #f3f3f3; }
+
+@media (max-width: 1280px) {
+  .showcase {
+    height: 55rem; }
+  #work .skills {
+    grid-template-columns: repeat(2, 1fr); }
+  #about .img-container img {
+    padding-left: 30px; } }
+
+@media (max-width: 850px) {
+  #work .skills {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); } }
+
+@media (max-width: 850px) {
+  .banner img {
+    display: none; } }
+
+@media (max-width: 595px) {
+  .banner img {
+    display: none; }
+  #about .img-container img {
+    display: none; } }
+
+@media (max-width: 435px) {
+  .showcase {
+    height: 650px; }
+    .showcase .text-color {
+      color: white;
+      font-size: 3rem; }
+    .showcase .showcase-content {
+      padding-top: 140px; }
+      .showcase .showcase-content p {
+        font-size: 15px;
+        color: white; }
+    .showcase .btn {
+      margin-top: auto; }
+  #work .skills {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); } }
+
+@media (max-width: 376px) {
+  .navbar ul {
+    justify-content: center;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); }
+  #work .skills {
+    grid-template-columns: repeat(1, 1fr); }
+  #about .img-container img {
+    height: 300px;
+    padding-left: 60px; }
+  .text-container {
+    padding-right: 60px; }
+    .text-container h2 {
+      font-size: 50px; } }
